@@ -1,21 +1,6 @@
-# name: test_failing_test
+# name: test_minimal_failing_example
   Mansion(
     rooms=list([
-      Room(
-        name='kitchen',
-        windows=list([
-          Window(
-            views=set({
-              View(
-                direction='NE',
-              ),
-              View(
-                direction='W',
-              ),
-            }),
-          ),
-        ]),
-      ),
     ]),
   )
 # ---

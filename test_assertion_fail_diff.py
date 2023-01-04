@@ -1,5 +1,7 @@
 import syrupy
 
+
+# I was trying to think of a complex nested object and thought of the lyrics in Tyler the Creator's 'Foreword'
 class View:
     direction: str = ""
 
@@ -30,6 +32,6 @@ class Mansion:
         self.rooms = rooms
 
 
-def test_failing_test(snapshot: syrupy.SnapshotAssertion):
+def test_minimal_failing_example(snapshot: syrupy.SnapshotAssertion):
     """Supposed to fail as I'm trying to recreate the 'Click to see difference' text in the PyCharm test runner."""
-    assert Mansion(rooms=[Room(name="kitchen", windows=[Window(views={View("NE"), View("E")})])]) == snapshot
+    assert Mansion(rooms=[Room(name="dungeon", windows=[])]) == snapshot
